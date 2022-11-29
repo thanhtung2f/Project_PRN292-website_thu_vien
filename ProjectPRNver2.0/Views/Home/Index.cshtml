@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listNewBook = (List< ProjectPRNver2._0.ViewModel.BookViewModel >)ViewBag.NewBook;
+    var listTop1NewBook = (List<ProjectPRNver2._0.ViewModel.BookViewModel>)ViewBag.Top1NewBook;
+    var listManga = (List<ProjectPRNver2._0.ViewModel.BookViewModel>)ViewBag.Manga;
+    var listAuthor = (List<ProjectPRNver2._0.EF.Book_Authors>)ViewBag.Author;
+}
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    
+}
+
+<!-- Slideshow container -->
+<div class="row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-10">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <img id="img" src="../../resource/img/banner1.jpg" style="width: 100%; height: 500px" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- New Book -->
+<div class="title">
+    <h3 class="title__book">Sách mới</h3>
+</div>
+<div class="container__book">
+    <div class="row">
+        <div class="col-xl-2"></div>
+        @foreach (var item in listNewBook)
+        {
+            var url = "/chi-tiet/sanpham=" + item.BookId;
+            <div class="col-xl-2">
+                <a href="@url" class="book__item-link">
+                    <div class="book__item">
+                        <div class="book__item-img" style="background-image: url(../../resource/img/@item.ImgPath)"></div>
+                        <div class="book__item-name">@item.BookName</div>
+                        <div class="book__item-author">@item.AuthorName</div>
+                        <div class="book__item-price">@String.Format(format, "{0:c3}", @item.BookPrice)</div>
+                    </div>
+                </a>
+            </div>
+        }
+
+
+    </div>
+</div>
+
+<!-- Weekend book -->
+<div class="row">
+    <div class="title">
+        <h3 class="title__book">Sách mới trong tuần</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-1"></div>
+    @foreach (var item in listTop1NewBook)
+    {
+        var url = "/chi-tiet/sanpham=" + item.BookId;
+        <div class="col-xl-10 container__weekend-book">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="weekend-book__img">
+                        <img src="~/resource/img/@item.ImgPath" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 weekend-book__detail">
+                    <h4 class="weekend-book__detail-name">@item.BookName</h4>
+                    <h5 class="weekend-book__detail-author">@item.AuthorName</h5>
+                    <p class="weekend-book__detail-author">@item.BookDescription</p>
+                    <h4 class="weekend-book__detail-price">@String.Format(format, "{0:c3}", @item.BookPrice)</h4>
+                    <a href="@url" class="weekend-book__detail-btn--more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Doraemon -->
+<div class="banner-doraemon">
+    <img src="~/resource/img/doraemon.jpg" />
+</div>
+<div class="title">
+    <h3 class="title__book">Truyện tranh</h3>
+</div>
+<div class="container__book">
+    <div class="row">
+        <div class="col-xl-2"></div>
+        @foreach (var manga in listManga)
+        {
+            var url = "/chi-tiet/sanpham=" + manga.BookId;
+            <div class="col-xl-2">
+                <a href="@url" class="book__item-link">
+                    <div class="book__item">
+                        <div class="book__item-img" style="background-image: url(../../resource/img/@manga.ImgPath)"></div>
+                        <div class="book__item-name">@manga.BookName</div>
+                        <div class="book__item-author">@manga.AuthorName</div>
+                        <div class="book__item-price">@String.Format(format, "{0:c3}", manga.BookPrice)</div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+<!-- Tác giả    -->
+<div class="title">
+    <h3 class="title__book">Tác giả</h3>
+</div>
+<div class="col-xl-3"></div>
+<div class="container_author123">
+    @foreach (var author in listAuthor)
+    {
+        var url = "/detail/tacgia=" + author.AuthorId;
+        <div class="col-xl-6 container__author">
+            <a href="@url" class="author-link">
+                <div class="row">
+                    <div class="col-xl-1">
+                        <div class="author__img">
+                            <img src="~/resource/img/@author.Image" />
+                        </div>
+                    </div>
+                    <div class="col-xl-4"></div>
+                    <div class="col-xl-5 author__detail">
+                        <h4 class="auther__detail-name">@author.AuthorName</h4>
+                        <p class="author__detail-introduc">@author.ShortDescription</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+

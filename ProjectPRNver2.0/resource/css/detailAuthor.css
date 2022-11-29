@@ -1,0 +1,7 @@
+﻿body {
+}
+.content_author {
+    display: flex;
+    font-size: 17px;
+    font-weight: 400px;
+}

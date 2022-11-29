@@ -1,0 +1,99 @@
+.container_SIGNIN {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: blanchedalmond;
+    margin-top: 70px;
+    margin-bottom: 170px;
+}
+.main_SIGNIN {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 20px solid beige;
+}
+.left_SIGNIN {
+    width: 400px;
+    height: 530px;
+    background-image: url(../img/HP1.jpg);
+    background-size: 400px auto;
+}
+.right_SIGNIN {
+    width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.login_SIGNIN {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.formLogin_SIGNIN {
+    margin: auto;
+    font-family: sans-serif;
+    height: auto;
+    width: 300px;
+}
+.title_SIGNIN {
+    padding-bottom: 25px;
+}
+.title_SIGNIN span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.account_SIGNIN {
+    font-size: 18px;
+}
+.account_SIGNIN input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.pass_SIGNIN {
+    font-size: 18px;
+}
+.pass_SIGNIN input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.forgetPass_SIGNIN { 
+    display:flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.forgetPass_SIGNIN .remember-checkbox {
+        float: left;
+    }
+.forgetPass_SIGNIN a {
+        float: right;
+        padding-left: 50px;
+        text-decoration: none;
+    }
+.buttonLogin_SIGNIN {
+    text-align: center;
+    color: blue;
+}
+.buttonLogin_SIGNIN button{
+    height: 40px;
+    width: 300px;
+    background-color: #06BA59;
+    color: white;
+}
+.Regiser_SIGNIN {
+    padding-top: 50px;
+    text-align: center;
+}
+.Regiser_SIGNIN a {
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,78 @@
+﻿@model List<ProjectPRN.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="~/resource/js/Controller/cartController.js"></script>
+}
+
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    var total = @Model.Sum(i => i.Book.BookPrice * i.Quantity);
+}﻿
+<body style="overflow-x: hidden; background: url(./resource/img/background.jpg)">
+
+    <div class="container">
+
+        <div class="row" style="margin-bottom: 100px;">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product</th>
+                                <th scope="col" class="text-center">Quantity</th>
+                                <th scope="col" class="text-right">Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><img src="~/resource/img/@item.Book.imgPath" class="cart__img" /></td>
+                                    <td>@item.Book.BookName</td>
+
+                                    <td><input class="form-control txtQuantity" type="text" data-id="@item.Book.BookId" value="@item.Quantity" /></td>
+                                    <td class="text-right">@String.Format(format, "{0:c3}", @item.Book.BookPrice.GetValueOrDefault(0))</td>
+                                    <td class="text-right">
+                                        <button data-id="@item.Book.BookId" class="btn-delete  btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                            }
+                        <td style="font-size: 24px;"><strong>Total</strong></td>
+                        <td class="text-total" style="font-size: 24px;"><strong>@String.Format(format, "{0:c3}", total)</strong></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="row cart__btn">
+                    <div class="col-sm-12 col-md-6">
+                        <button class="btn btn-block btn-light" id="btnContinue">Mua thêm</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <button class="btn btn-block btn-light" id="btnUpdate">Cập nhật</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <button class="btn btn-block btn-light" id="btnDeleteAll">Làm trống giỏ hàng</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-right">
+                        <button class="btn btn-lg btn-block btn-success text-uppercase" id="btnPayment">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

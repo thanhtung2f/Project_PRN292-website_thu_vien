@@ -1,0 +1,124 @@
+﻿@model List<ProjectPRN.Models.CartItem>
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    var total = @Model.Sum(i => i.Book.BookPrice * i.Quantity);
+}
+
+@{
+    var session = (ProjectPRNver2._0.Common.UserLogin)Session[ProjectPRNver2._0.Common.CommonConstants.USER_SESSION];
+}
+
+<form method="post">
+    <div class="row">
+        <h4 class="payment__heading">Thanh toán</h4>
+    </div>
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="payment__info">
+                <div class="payment__heading-text">
+                    <i class="fas fa-home payment-icon"></i>
+                    <p>Thông tin thanh toán</p>
+                </div>
+                <div class="payment__info-detail">
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-xl-3">
+                            <label for="name">Họ và tên:</label>
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="text" id="name" name="name" value="@session.UserName" />
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-xl-3">
+                            <label for="emailUser">Email: </label>
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="email" id="emailUser" name="email" value="@session.UserMail" />
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-xl-3">
+                            <label for="phone">Điện thoại:</label>
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="tel" id="phone" name="phone" value="@session.UserPhone" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <label for="address">Địa chỉ:</label>
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="text" id="address" name="address" value="@session.Address" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="payment__info">
+                <div class="payment__heading-text">
+                    <i class="fas fa-credit-card payment-icon"></i>
+                    <p>Phương thức thanh toán</p>
+                </div>
+                <div class="payment__info-pay">
+                    <div class="payment__pay-text">
+                        <p class="pay-text">Chọn phương thức thanh toán từ các tùy chọn sau.</p>
+                    </div>
+                    <div class="payment__pay-method">
+                        <input type="radio" id="huey" name="drone" value="huey" checked />
+                        <label for="huey">Trả tiền khi nhận hàng</label>
+                        <br />
+                        <input type="radio" id="huey" name="drone" value="huey" />
+                        <label for="huey">Trả tiền bằng thẻ tín dụng</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="payment__info">
+                <div class="payment__heading-text">
+                    <i class="fas fa-store payment-icon"></i>
+                    <p>Nội dung giỏ hàng</p>
+                </div>
+                <div class="payment__cart-detail">
+                    <table>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Book.BookName</td>
+                                <td>@item.Quantity</td>
+                                <td>@String.Format(format, "{0:c3}", @item.Book.BookPrice * item.Quantity)</td>
+                            </tr>
+                        }
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td style="font-size: 24px; font-weight: bold">Tổng tiền: @String.Format(format, "{0:c3}", total)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn btn-primary" type="submit">Đặt mua</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

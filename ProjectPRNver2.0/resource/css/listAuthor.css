@@ -1,0 +1,26 @@
+﻿body {
+}
+.book__img img {
+    height: 200px;
+    width: 180px;
+    padding: 16px;
+    padding-left: 6px;
+}
+
+.information {
+    display: flex;
+}
+
+.name {
+    width: 330px;
+}
+
+.detail__author {
+    text-decoration: none;
+    color: #000;
+    margin-top: 40px;
+}
+
+.name #divh3 {
+    margin-top: 30px;
+}

@@ -1,0 +1,96 @@
+.container_SIGNUP {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: blanchedalmond;
+    margin-top: 70px;
+    margin-bottom: 170px;
+}
+.main_SIGNUP {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 20px solid beige;
+}
+.left_SIGNUP {
+    width: 400px;
+    height: 600px;
+    background-image: url(../img/HP1.jpg);
+    background-size: 400px auto;
+}
+.right_SIGNUP {
+    width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.login_SIGNUP {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.formLogin_SIGNUP {
+    margin: auto;
+    font-family: sans-serif;
+    height: auto;
+    width: 300px;
+}
+.title_SIGNUP {
+    padding-bottom: 25px;
+}
+.title_SIGNUP span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.name_SIGNUP {
+    font-size: 18px;
+}
+.name_SIGNUP input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.pass_SIGNUP {
+    font-size: 18px;
+}
+.pass_SIGNUP input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.numberphone_SIGNUP {
+    font-size: 18px;
+}
+.numberphone_SIGNUP input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.Sex_SIGNUP {
+    display: flex;
+    margin: 20px 0;
+}
+.Sex_SIGNUP > div{
+    margin: 0 22px;
+}
+.buttonRegister_SIGNUP {
+    text-align: center;
+    color: blue;
+}
+.buttonRegister_SIGNUP input{
+    height: 40px;
+    width: 300px;
+    background-color: #06BA59;
+    color: white;
+}

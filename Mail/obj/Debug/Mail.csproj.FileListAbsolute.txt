@@ -1,0 +1,6 @@
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\bin\Debug\Mail.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\bin\Debug\Mail.pdb
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\obj\Debug\Mail.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\obj\Debug\Mail.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\obj\Debug\Mail.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Mail\obj\Debug\Mail.pdb

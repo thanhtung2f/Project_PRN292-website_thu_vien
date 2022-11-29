@@ -1,0 +1,38 @@
+﻿@model PagedList.IPagedList<ProjectPRNver2._0.Phap.BookPhap>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+
+}
+<!-- List item -->
+<div class="container__CATEGORY">
+    <div class="row__BOOK">
+        @foreach (var item in Model)
+        {
+            var url = "/chi-tiet/sanpham=" + item.BookId;
+            <div class="col_CATEGORY">
+                <a href="@url" class="book__item-link">
+                    <div class="book__item">
+                        <div class="book__item-img" style="background-image: url(/resource/img/@item.imgPath)"></div>
+                        <div class="book__item-name">@item.BookName</div>
+                        <a href="#" class="book__item-author">@item.AuthorName</a>
+                        <div class="book__item-price">@String.Format(format, "{0:c3}", @item.BookPrice)</div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="paging">
+        @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page }))
+    </div>
+</div>
+<style>
+    .paging li {
+        display: inline;
+    }
+</style>

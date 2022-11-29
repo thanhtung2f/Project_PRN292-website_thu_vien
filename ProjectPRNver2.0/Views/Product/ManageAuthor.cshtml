@@ -1,0 +1,67 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<ProjectPRNver2._0.EF.Book_Authors>
+
+@{
+    ViewBag.Title = "ManageAuthor";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<h2>Quản lý tác giả</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().AuthorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().AuthorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ShortDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Image)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <div id="bookImg"><img src="@Url.Content("../../resource/img/"+@item.Image)" width="100" height="150"></div>
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "UpdateAuthor", new { @authorId = item.AuthorId }) |
+                @Html.ActionLink("Chi tiết", "DetailAuthorAdmin", new { @authorId = item.AuthorId }) |
+                @Html.ActionLink("Xoá", "DeleteAuthor", new { @authorId = item.AuthorId })
+            </td>
+        </tr>
+    }
+
+</table>
+Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="paging">
+    @Html.PagedListPager(Model, page => Url.Action("ManageAuthor", new { page = page }))
+</div>
+<style>
+    .paging li {
+        display: inline;
+    }
+</style>

@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "WishListView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var wishList = (List<ProjectPRNver2._0.ViewModel.BookViewModel>)ViewBag.wishBook;
+    var user = (ProjectPRNver2._0.EF.User)ViewBag.user;
+}
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+
+}
+<div class="container">
+    <!-- Category -->
+    <div class="row justify-content-center" style="margin-bottom: 130px; margin-top: 35px;">
+        <div class="col-9">
+            <div class="row-8">
+                <a href="/nguoi-dung/id=@user.UserId">
+                    <button href="/" type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black ">Sổ Địa Chỉ</button>
+                </a>
+                <a href="/chi-tiet-don-hang/id=@user.UserId">
+                    <button href="#" type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black ">Đơn hàng</button>
+                </a>
+                <a href="/yeu-thich/id=@user.UserId">
+                    <button type="button" class="btn btn-primary" style="font-weight: bold; background-color: gray; color: black">Yêu thích </button>
+                </a>
+            </div>
+            <br>
+            <h3 style="color:#000;">Danh sách yêu thích</h3>
+        </div>
+
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            @foreach (var item in wishList)
+            {
+                var url = "/chi-tiet/sanpham=" + item.BookId;
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <a href="@url" class="book__item-link">
+                            <div class="book__item">
+                                <div class="book__item-img" style="background-image: url(../../resource/img/@item.ImgPath)"></div>
+                                <div class="book__item-name">@item.BookName</div>
+                                <div class="book__item-author">@item.AuthorName</div>
+                                <div class="book__item-price">@String.Format(format, "{0:c3}", @item.BookPrice)</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+﻿@model ProjectPRNver2._0.Models.LoginModel
+
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container_SIGNIN">
+    <div class="main_SIGNIN">
+        <div class="left_SIGNIN">
+        </div>
+        <div class="right_SIGNIN">
+            <div class="login_SIGNIN">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(false, "", "error");
+                    <div class="formLogin_SIGNIN">
+                        <div class="title_SIGNIN">
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div class="account_SIGNIN">
+                            Tên đăng nhập <br>
+                            @Html.TextBoxFor(model => model.UserName, new { @autofocus = "autofocus" })
+                        </div>
+                        <div class="pass_SIGNIN">
+                            Mật Khẩu <br>
+                            @Html.PasswordFor(model => model.Password)
+
+                        </div>
+                        <div class="forgetPass_SIGNIN">
+                            @Html.CheckBoxFor(model => model.RememberMe)
+                            Remember me
+                            @Html.ActionLink("Quên mật khẩu?", "ForgotPassword", "Login")
+                        </div>
+                        <div class="buttonLogin_SIGNIN">
+                            <button type="submit" name="login">Đăng Nhập</button>
+                        </div>
+                        <div class="Regiser_SIGNIN">
+                            <span>Không có tài khoản?</span>
+                            @Html.ActionLink("Đăng ký ngay", "Register", "Register")
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+}

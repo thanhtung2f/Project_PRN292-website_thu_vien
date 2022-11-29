@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  width: 300px;
+  height: 80px;
+}
+.header__search {
+  height: 40px;
+  align-items: center;
+  display: flex;
+  border: 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+.header__search--input-wrapper {
+  height: 100%;
+}
+.header__search--input {
+  flex: 1;
+  height: 100%;
+  width: 500px;
+  position: relative;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+}
+.header__search-btn {
+  border: none;
+  height: 34px;
+  width: 80px;
+  margin-right: 3px;
+  outline: none;
+  background-color: #fff;
+}
+.header__search-btn-icon {
+  font-size: 18px;
+  color: #000;
+}
+.header__cart {
+  width: 200px;
+  text-align: center;
+}
+.header__cart-icon--like-link {
+  padding-right: 10px;
+}
+.header__cart-icon-like {
+  font-size: 28px;
+  color: #d03d3d;
+}
+.header__cart-icon-cart {
+  font-size: 28px;
+  color: rgb(88, 59, 59);
+}
+.header__signup {
+  height: 40px;
+  width: 150px;
+  border-radius: 30px;
+  background-color: #d03d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__signup-link {
+  color: #fff;
+  text-decoration: none;
+}
+.category {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: relative;
+}
+.category-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.category-icon {
+  font-size: 16px;
+  position: absolute;
+  top: 6px;
+  margin-left: 3px;
+}
+.dropdown .btn-secondary {
+  color: #000;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+}
+.dropdown {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+/*---------------------------------
+----------------Detail Book------
+---------------------------------*/
+.book__img img {
+  height: 350px;
+  width: 250px;
+  padding: 20px;
+}
+.title__book {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+}
+.container__book-info {
+  border-left: 2px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.book__info {
+  font-size: 16px;
+  font-weight: 600;
+}
+.book__info-detail {
+  color: rgb(86, 58, 185);
+}
+.book__detail {
+  border-left: 2px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.heading__detail {
+  font-size: 18px;
+  font-weight: 600;
+}
+.book__price {
+  background-color: rgb(78, 22, 22);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+.book__buy-link {
+  background-color: rgb(78, 22, 22);
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+}
+.book__buy-link:hover{
+    color: #fff;
+}
+.book__buy {
+        display: flex;
+        align-items: center;
+}
+.book__like-icon {
+  font-size: 28px;
+  color: #fff;
+  padding-right: 30px;
+}
+.book__like-icon:hover {
+  color: rgb(255, 0, 0);
+}
+/*---------------------------------
+------------FOOTER----------------
+-----------------------------*/
+footer {
+  display: flex;
+  margin-top: 30px;
+  background-color: #7979ce;
+  color: #fff;
+}
+.footer__img img {
+  width: 300px;
+  height: 80px;
+}
+.footer__heading {
+  text-align: center;
+  margin-left: 160px;
+}

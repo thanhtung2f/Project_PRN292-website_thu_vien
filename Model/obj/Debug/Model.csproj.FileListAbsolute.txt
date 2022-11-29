@@ -1,0 +1,96 @@
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Model.dll.config
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\obj\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\obj\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Model.dll.config
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Model.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Model.pdb
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.xml
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CopyComplete
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\obj\Debug\Model.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\obj\Debug\Model.pdb
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\PagedList.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.dll
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\PagedList.xml
+D:\LaptopToshiba\PRN292\Project_Version1.0\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Model.dll.config
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Model.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Model.pdb
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\PagedList.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\PagedList.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.xml
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CopyComplete
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\obj\Debug\Model.dll
+D:\ProjectPRN-20210718T083526Z-001\ProjectPRN\Project\ProjectPRNver2.0\Model\obj\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Model.dll.config
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\PagedList.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\PagedList.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\obj\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\New folder\ProjectPRNver2.0\Model\obj\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Model.dll.config
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Model.pdb
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\PagedList.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\PagedList.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\obj\Debug\Model.dll
+C:\Users\nguye\OneDrive\Desktop\New folder (5)\ProjectPRNver2.0\Model\obj\Debug\Model.pdb

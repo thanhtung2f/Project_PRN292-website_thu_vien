@@ -1,0 +1,128 @@
+﻿@model ProjectPRNver2._0.EF.User
+@{
+    ViewBag.Title = "UserDetailView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <!-- Category -->
+    <!--             code -->
+
+    <div class="row justify-content-center" style="margin-bottom: 130px;
+        margin-top: 35px;
+">
+        <div class="col-9">
+            <div class="row-8">
+                <a href="/nguoi-dung/id=@Model.UserId">
+                    <button href="/" type="button" class="btn btn-primary" style="font-weight: bold; background-color: gray; color: black ">Sổ Địa Chỉ</button>
+                </a>
+                <a href="/chi-tiet-don-hang/id=@Model.UserId">
+                    <button href="#" type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black ">Đơn hàng</button>
+                </a>
+                <a href="/yeu-thich/id=@Model.UserId">
+                    <button type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black">Yêu thích </button>
+                </a>
+
+            </div>
+            <br>
+            <h3 style="color:#000;">Địa chỉ thanh toán</h3>
+            <br>
+            <div class="col-5 border border-dark" style="padding: 30px 10px 30px; background-color: white; color: #000;">
+                <b>Người nhận:</b> @Model.FullName<br><br />
+                <b>Địa chỉ:</b> @Model.Address<br>
+                <br><b>Email:</b> @Model.UserMail<br>
+                <br><b>Điện thoại:</b> @Model.UserPhone
+            </div>
+
+        </div>
+
+        <div class="col-9">
+            <h3 style="color:#000;">Sửa thông tin</h3>
+        </div>
+        <b>@ViewBag.message</b>
+        @*sửa thông tin*@
+        @using (Html.BeginForm("UserDetail", "UserDetail", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="col-9">
+                <div class="col-lg-8">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.UserId)
+                    @Html.HiddenFor(model => model.UserName)
+
+                    <div class="col-lg-8" style="color:#000;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Họ và tên</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Email</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Html.EditorFor(model => model.UserMail, new { htmlAttributes = new { @class = "form-control" } })
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Số điện thoại</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Html.EditorFor(model => model.UserPhone, new { htmlAttributes = new { @class = "form-control" } })
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Địa chỉ</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Mật khẩu mới</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        @Html.PasswordFor(model => model.PassWord, new { htmlAttributes = new { @class = "form-control" } })
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Mật khẩu mới</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input name="newPass" type="password" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Nhập lại mật khẩu</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input name="newPassConfirm" type="password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="submit" class="btn btn-primary px-4" name="update" value="Lưu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>        
+</div>

@@ -1,0 +1,69 @@
+﻿@model ProjectPRNver2._0.EF.Book
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var session = (ProjectPRNver2._0.Common.UserLogin)Session[ProjectPRNver2._0.Common.CommonConstants.USER_SESSION];
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xl-2 book__img">
+            <img src="../../resource/img/@Model.imgPath" alt="" />
+        </div>
+        <div class="col-xl-1"></div>
+        <div class="col-xl-9">
+            <h4 class="title__book">@Model.BookName</h4>
+            <div class="row container__book-info">
+                <div class="col-xl-4">
+                    <p class="book__info">Tác giả: <span class="book__info-detail">J.K.Rowling</span></p>
+                    <p class="book__info">Thể loại: <span class="book__info-detail">Văn học</span></p>
+                    <p class="book__info">Số trang: <span class="book__info-detail">@Model.NumberOfPage</span></p>
+                    <p class="book__info">Ngày phát hành: <span class="book__info-detail">@Model.ReleaseDate</span></p>
+                </div>
+                <div class="col-xl-3">
+                    <p class="book__price">Giá bán: @Model.BookPrice</p>
+                    <div class="book__buy">
+                        @if (Session["UserID"] == null)
+                        {
+                            <a href="/Login/Login"><i class="fas fa-heart book__like-icon"></i></a>
+                        }
+                        else
+                        {
+                            using (Html.BeginForm("AddWishList", "BookItem", FormMethod.Post))
+                            {
+                                <input type="hidden" name="userId" value="@session.UserID" />
+                                <input type="hidden" name="bookId" value="@Model.BookId" />
+
+
+                                <button type="submit" name="Add" style="background: none; padding: 0px; border: none;"><i class="fas fa-heart book__like-icon"></i></button>
+                            }
+                            @*@using (Html.BeginForm("AddWishList", "Detail", FormMethod.Post))
+                                {
+                                    @Html.Hidden(m => @Model.BookId, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.Hidden(model => @Model.BookId, new { htmlAttributes = new { @class = "form-control" } })
+                                }*@
+
+
+                            @*<a href="/yeu-thich/id=@session.UserID">
+                                    <input type="hidden" name="userId" value="@session.UserID" />
+                                    <input type="hidden" name="bookId" value="@Model.BookId" />
+                                    <i class="fas fa-heart book__like-icon"></i>
+                                </a>*@
+                        }
+
+                        <a href="" class="book__buy-link">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 book__detail">
+                    <p class="heading__detail">Giới thiệu tác phẩm</p>
+                    <p class="main__detail">@Model.BookDescription</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

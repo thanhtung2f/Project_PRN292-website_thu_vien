@@ -1,0 +1,90 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<ProjectPRNver2._0.EF.Book>
+
+@{
+    ViewBag.Title = "Quản lý sản phẩm";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<h2>Quản lý sản phẩm</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().BookName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().BookDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().BookPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().BookQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().AuthorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NumberOfPage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().imgPath)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Authors.AuthorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfPage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                <div id="bookImg"><img src="@Url.Content("../../resource/img/"+@item.imgPath)" width="100" height="150"></div>
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "UpdateBook", new { @bookId = item.BookId }) |
+                @Html.ActionLink("Chi tiết", "Detail", new { @bookId = item.BookId }) |
+                @Html.ActionLink("Xoá", "Delete", new { @bookId = item.BookId })
+            </td>
+        </tr>
+    }
+
+</table>
+Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="paging">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .paging li {
+        display: inline;
+    }
+</style>

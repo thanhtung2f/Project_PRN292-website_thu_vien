@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "OrderView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var order = (List<ProjectPRNver2._0.ViewModel.OrderViewModel>)ViewBag.order;
+    var user = (ProjectPRNver2._0.EF.User)ViewBag.user;
+    decimal? money = 0;
+}
+@{
+    // define format VND
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}﻿
+
+<div class="container">
+    <!-- Category -->
+
+    <div class="row justify-content-center" style="margin-bottom: 130px; margin-top: 35px;">
+        <div class="col-9">
+            <div class="row-8">
+                <a href="/nguoi-dung/id=@user.UserId">
+                    <button href="/" type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black ">Sổ Địa Chỉ</button>
+                </a>
+                <a href="/chi-tiet-don-hang/id=@user.UserId">
+                    <button href="#" type="button" class="btn btn-primary" style="font-weight: bold; background-color: gray; color: black ">Đơn hàng</button>
+                </a>
+                <a href="/yeu-thich/id=@user.UserId">
+                    <button type="button" class="btn btn-primary" style="font-weight: bold; background-color: white; color: black">Yêu thích </button>
+                </a>
+            </div>
+            <br>
+            <h3 style="color:#000;">Danh sách đơn hàng</h3>
+        </div>
+        <div class="col-9">
+            @foreach (var item in order)
+            {
+                var url = "/chi-tiet/sanpham=" + item.BookId;
+                money = money + (item.Quantity * item.price);
+                <div class="row" style="color:#000; font-size: 16px;">
+                    <div class="col">
+                        <img class="img-book" src="../../resource/img/@item.image" style="height: 100px;
+                            width: 70px;">
+                    </div>
+                    <div class="col">@item.BookName</div>
+                    <div class="col">@String.Format(format, "{0:c3}", @item.price)</div>
+                    <div class="col">@item.Quantity</div>
+                </div>
+            }
+
+
+            <div class="row" style="color:#000; font-size: 18px;">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    Tổng số tiền: @String.Format(format, "{0:c3}", @money)
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
